@@ -1,0 +1,204 @@
+body{
+    background-color: #333333;
+}
+.container{
+    display: flex;
+}
+.tinder{
+    width: 375px;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+.tinderStatus{
+    position: absolute;
+    top: 50%;
+    margin-top: -30%;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+.tinderCards{
+    flex-grow: 1;
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+.tinderCard{
+    display: inline-block;
+    width: 350px;
+    max-width: 375px;
+    height: 600px;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    background-color: rgb(25, 28, 31);
+    left: 38%;
+    transform: translate(-50%);
+    margin-top: 30px;
+}
+
+.moving.tinderCard {
+    transition: none;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor:  grabbing;
+}
+.loaded.tinder{
+    opacity: 1;
+}
+.tinderCardImg img{
+    max-width: 100%;
+    pointer-events: none;
+}
+.userIcon{
+    width: 30px;
+    height: 32px;
+    flex-shrink: 0;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+}
+.messageIcon{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+}
+.header{
+    margin-left: 80px;
+    
+}
+.userInfo{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 130px;
+    width: 275px;
+    height: 43px;
+    flex-shrink: 0;
+    margin-top: -90px;   
+    margin-left: 40px;
+}
+.userInfo h3{
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 16px;
+    pointer-events: none;
+}
+.userInfo p {
+    margin-top: 50px;
+    pointer-events: none;
+    font-family: 'Open Sans';
+    color: #FFF;
+}
+.subIcon{
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    bottom: 0;
+    padding-left: 105px;
+}
+.subIcon button{
+    border-radius: 80%;
+    background-color: #FFF;
+    border: 0;
+    
+    
+    margin: 10px 8px;
+}
+
+.subIcon img{
+    margin-top: 8px;
+}
+.subIcon button:focus {
+    outline: 0;
+}
+.backgroundImg{
+    position: absolute;
+    top: 0px;
+    width: 375px;
+    z-index: -1; 
+}
+.messageArea{
+    position: relative;
+    left: 0;
+    width: 250px;
+    height: 860px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.message{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.user_msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userMessage{
+    display: flex;
+}
+.messageUserImg{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+.user_msg{
+    padding-left: 35px;
+}
+.messageUserName{
+    display: flex;
+}
+.messageUserName p{
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.userMessageMsg {
+    display: flex;
+}
+.userMessageMsg p{
+    color: #8D8D8D;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/register.css">
+    <script src="assets/js/register.js" type="module" defer></script>
+</head>
+<body>
+
+    <form class="post-form">
+        <div class="form">
+            <input class="input" placeholder="username" name="username" type="text" required>
+            <span class="input-border"></span>
+        </div>
+        <div class="form">
+            <input class="input" placeholder="password" name="password" type="password" required>
+            <span class="input-border"></span>
+        </div>
+        <div class="form">
+            <input class="input" placeholder="name" name="name" type="text" required>
+            <span class="input-border"></span>
+        </div>
+        <div class="form">
+            <input class="input" placeholder="age" name="age" type="number" required>
+            <span class="input-border"></span>
+        </div>
+        <div class="form" style="margin-top: 2em;"> 
+            <label for="images" class="drop-container" id="dropcontainer">
+                <span class="drop-title">Drop image here</span>
+                or
+                <input type="file" id="images" name="image" accept="image/*" required>
+              </label>
+            <span class="input-border"></span>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    
+</body>
+</html>
